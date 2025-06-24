@@ -1,14 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio - Nicolas Matheus</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #f3f4f6; /* tom clarinho */
+      display: flex;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #1e3a8a;
+    }
+
+    .foto-perfil {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #1e3a8a; /* azul meio escuro */
+      flex-shrink: 0;
+    }
+
+    .cabecalho-texto h1 {
+      margin: 0;
+      color: #1e3a8a; /* azul meio escuro */
+      font-weight: 600;
+    }
+
+    .cabecalho-texto p {
+      margin: 0.3rem 0 0;
+      font-style: italic;
+      color: #555;
+      font-weight: 300;
+      font-size: 0.95rem;
+    }
+
+    nav {
+      margin-top: 0.8rem;
+    }
+
+    nav a {
+      color: #1e3a8a; /* azul meio escuro */
+      text-decoration: none;
+      margin-right: 1rem;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: opacity 0.3s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      color: #1e3a8a; /* azul meio escuro */
+      font-weight: 600;
+      border-bottom: 1.5px solid #1e3a8a;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .projeto {
+      background: #f9fafb; /* muito claro, quase branco */
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 8px rgba(59, 130, 246, 0.15); /* sombra azul clara */
+      transition: background 0.3s ease;
+    }
+
+    .projeto:hover {
+      background: #e0e7ff; /* azul clarinho no hover */
+    }
+
+    .projeto h3 {
+      margin: 0 0 0.5rem;
+      color: #3b82f6; /* azul vibrante */
+      font-weight: 600;
+    }
+
+    .projeto p {
+      margin: 0;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    #contato ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 0 0;
+    }
+
+    #contato ul li {
+      margin-bottom: 0.6rem;
+    }
+
+    #contato a {
+      color: #1e3a8a; /* azul meio escuro */
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.3s ease;
+    }
+
+    #contato a:hover {
+      opacity: 0.7;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: #f3f4f6;
+      color: #666;
+      font-size: 0.85rem;
+      border-top: 2px solid #1e3a8a;
+    }
+
+    footer a {
+      color: #1e3a8a;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+      .cabecalho-texto {
+        flex: 1 1 100%;
+      }
+      nav {
+        margin-top: 0.5rem;
+      }
+      nav a {
+        margin-right: 0.8rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Bebetando</h1>
-    <p>nunca pare de tentar deposita mais 5quin ai 8=====D</p>
+  <header>
+    <img src="nicolas.png" alt="Foto de Nicolas Matheus" class="foto-perfil" />
+    <div class="cabecalho-texto">
+      <h1>Nicolas Matheus</h1>
+      <p>Full Stack Developer Iniciante | Codando com energia e criatividade ☕💻</p>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <p>
+        Sou o Nicolas, desenvolvedor full stack em início de jornada, explorando o mundo da programação com curiosidade. Me interesso por front-end, back-end e todo o caminho entre eles. Gosto de transformar ideias em código, e bugs em aprendizado 😄.
+      </p>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+
+      <div class="projeto">
+        <h3>To-do List com JavaScript</h3>
+        <p>Minha primeira aplicação prática! Uma lista de tarefas simples e funcional .</p>
+      </div>
+
+      <div class="projeto">
+        <h3>API de piadas com Node.js</h3>
+        <p>Uma API que serve piadas aleatórias. Para dar risada quando o código não compila 😂.</p>
+      </div>
+
+      <div class="projeto">
+        <h3>Este Portfólio</h3>
+        <p>Simples, direto ao ponto e com um toque descontraído. Feito com HTML e CSS puro!</p>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Quer conversar sobre projetos, bugs ou ideias? Me chama:</p>
+      <ul>
+        <li>Email: <a href="mailto:nick10.ribeiro@gmail.com">nick10.ribeiro@gmail.com</a></li>
+        <li>Telefone: <a href="tel:+5519981294073">+55 (19) 98129-4073</a></li>
+        <li>GitHub: <a href="https://github.com/NZKfps" target="_blank" rel="noopener noreferrer">@NZKfps</a></li>
+      </ul> 
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito com ❤️ por Nicolas Matheus | Email: <a href="mailto:nick10.ribeiro@gmail.com">nick10.ribeiro@gmail.com</a> | Tel: <a href="tel:+5519981294073">(19) 98129-4073</a></p>
+  </footer>
 </body>
-    <h1>tigrinho</h1>
-    <img src=https://www.google.com/url?sa=i&url=https%3A%2F%2Fveja.abril.com.br%2Ftecnologia%2Fjogo-do-tigrinho-saiba-como-bloquear-golpistas-no-instagram%2F&psig=AOvVaw2yXAgMz0rBIuIxNTpf5kgX&ust=1748991995261000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMDYiIft040DFQAAAAAdAAAAABAE alt="Tigrinho" />
 </html>
